@@ -128,6 +128,7 @@ module API. Options include:
 {
   container: '#some-query-selector'; // container to attach to
   APIUrl: 'https://www.example.com/.netlify/functions/identity'; // Absolute url to endpoint.  ONLY USE IN SPECIAL CASES!
+  namePlaceholder: 'some-placeholder-for-Name'; // custom placeholder for name input form
 }
 ```
 
@@ -164,6 +165,8 @@ https://olddvdscreensaver.com
 **High level overlay**: If you want a "widget" overlay that gives you a nice UI out of the box, with a somewhat larger bundle, check https://github.com/netlify/netlify-identity-widget
 
 **High level popup**: If you want a popup window approach also with a nice UI out of the box, and don't mind the popup flow, check https://github.com/netlify/netlify-auth-providers
+
+You can also see an example of wrapping netlify-identity-widget in a React Hook here: https://github.com/sw-yx/netlify-fauna-todo/blob/master/src/hooks/useNetlifyIdentity.js
 
 ## FAQ
 
